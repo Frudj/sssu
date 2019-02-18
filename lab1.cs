@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         static void Main()
         {
-            Console.WriteLine("Введите a");
+            Console.WriteLine("Введите a, пожалуйста");
             double a = Convert.ToDouble(Console.ReadLine());
 
             double z1 = (Math.Sin(2 * a) + Math.Sin(5 * a) - Math.Sin(3 * a)) / (Math.Cos(a) - Math.Cos(3 * a) + Math.Cos(5 * a));
