@@ -1,2 +1,0 @@
-# sssu
-Homework
