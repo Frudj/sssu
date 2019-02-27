@@ -15,8 +15,8 @@ namespace lab3
             int N = int.Parse(Console.ReadLine());
             double[] Mass = new double[N];
 
-
-
+            //заполнение массива
+     
             Console.WriteLine("Выберите ручной или автоматический вариант заполнения массива");
             Console.WriteLine(" 1 - Ручной ввод\n 2 - Автоматический ввод");
         swVVOD:
@@ -49,6 +49,7 @@ namespace lab3
                     }
             }
 
+            //сумма элементов массива (с нечетными номерами)
 
             double nechetSum = 0;
             for (int i = 1; i < N; i += 2)
@@ -57,16 +58,19 @@ namespace lab3
             }
             Console.WriteLine("\n\nСумма нечетных элементов = {0}", nechetSum.ToString());
 
-
+            //сумма элементов массива (между крайними открицательными элементами)
 
             double SumMejdu = Mass.SkipWhile(r => r >= 0).Skip(1).Reverse().SkipWhile(r => r >= 0).Skip(1).Sum();
             Console.WriteLine("\nСумма элементов между отрицательными элементами = {0}\n", SumMejdu.ToString());
 
+            //удлаение элементов с модулем меньше еденицы
 
             for (int i = 0; i < N; i++)
             {
                 if (Math.Abs(Mass[i]) < 1) Mass[i] = 0;
             }
+
+            //сжатие массива + заполнение нуялми 
 
             for (int i = 0; i < N; i++)
             {
