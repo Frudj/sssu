@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab3
+namespace lab2
 {
     class Program
     {
@@ -17,8 +17,8 @@ namespace lab3
 
             //заполнение массива
      
-            Console.WriteLine("Выберите ручной или автоматический вариант заполнения массива");
-            Console.WriteLine(" 1 - Ручной ввод\n 2 - Автоматический ввод");
+            Console.WriteLine("Ручной или рандомнй");
+            Console.WriteLine(" 1 - Ручной\n 2 - Рандом");
         swVVOD:
             int vvod = int.Parse(Console.ReadLine());
             switch (vvod)
@@ -44,7 +44,7 @@ namespace lab3
                     }
                 default:
                     {
-                        Console.WriteLine("Нужно ввести 1 или 2!!!");
+                        Console.WriteLine("Нужно ввести 1 или 2");
                         goto swVVOD;
                     }
             }
